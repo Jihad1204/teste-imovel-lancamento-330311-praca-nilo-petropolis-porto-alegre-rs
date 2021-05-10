@@ -39,7 +39,7 @@
                .withButton({ "color": "#2CC3D5", "icon": "" })
                .withEventHandler(BlipChat.CREATE_ACCOUNT_EVENT,
                   function () { blipClient.sendMessage({ "type": "text/plain", "content": url_atual }); });
-            BlipClient.withoutHistory().build();
+            BlipClient.build();
          }
       })();
    </script>
